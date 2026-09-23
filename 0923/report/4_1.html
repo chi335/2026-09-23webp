@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>셀렉터 만들기</title>
+    <style>
+        /* 1. 전체 배경색 및 기본 글자 설정 */
+        body {
+            background-color: skyblue;
+            font-size: 18px;          /* 글자 크기 약간 크게 */
+            font-family: 'Malgun Gothic', sans-serif;
+            padding-left: 20px;       /* 왼쪽 화면 끝에 너무 붙지 않게 여백 추가 */
+        }
+
+        /* 구분선(hr) */
+        hr {
+            margin: 20px 0;
+        }
+
+        /* 2. 클래스 셀렉터 (.headline): 갈색 글자 + 중앙 정렬 */
+        .headline {
+            color: brown;
+            font-size: 28px;
+            text-align: center;       /* 제목만 화면 중앙에 배치 */
+        }
+
+        /* 3. 도움말 (div 태그의 help 클래스): 좌측 정렬 */
+        div.help {
+            color: deepskyblue;
+            font-weight: bold;
+            font-size: 22px;
+            text-align: left;         /* 좌측 정렬 */
+            margin-bottom: 10px;
+        }
+
+        /* 4. !!경고 메시지 (p 태그의 help 클래스): 빨간색 + 크게 + 좌측 정렬 */
+        p.help {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;         /* 좌측 정렬 */
+            margin-bottom: 15px;
+        }
+
+        /* 5. 뜨거운 태양 (id="hot"): 주황색 박스 + 좌측 배치 */
+        #hot {
+            background-color: orange;  /* 주황색 배경 */
+            color: white;              /* 글자색 흰색 */
+            display: inline-block;     /* 글자 크기에 맞춘 박스 */
+            padding: 10px 20px;        /* 박스 안쪽 여백 */
+            border-radius: 6px;        /* 박스 모서리 둥글게 */
+            font-weight: bold;
+            font-size: 22px;
+            text-align: left;         /* 좌측 정렬 */
+        }
+    </style>
+    </head>
+    <body class="=main">
+        <h3 class="headline">클래스 셀렉터</h3>
+        <hr>
+        <div class="help">도움말</div>
+        <p class="help">!!경고 메시지</p>
+        <p id="hot">뜨거운 태양</p>
+    </body>
+</html>

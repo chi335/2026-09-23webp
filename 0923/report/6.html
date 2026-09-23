@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>링크꾸미기</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            margin: 30px;
+        }
+
+        /* 1. 기본 링크 스타일: 초록색 + 밑줄 없음 */
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        /* 2. 마우스를 올렸을 때(hover) 스타일: Violet 색상 + 밑줄 추가 */
+        a:hover {
+            color: violet;
+            text-decoration: underline;
+        }
+
+        /* 검은 점이 있는 목록 스타일 */
+        ul {
+            list-style-type: disc; /* 기본 검은색 동그라미 점 */
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>링크꾸미기</h3>
+    <p>초록색에 밑줄없는 링크마우스를 올리면 밑줄과 violet색으로 변경</p>
+    <hr>
+
+    <!-- 검은 점이 붙는 목록(ul/li) -->
+    <ul>
+        <li><a href="https://www.naver.com" target="_blank">네이버 사이트</a></li>
+        <li><a href="https://www.google.com" target="_blank">구글사이트</a></li>
+    </ul>
+
+</body>
+</html>

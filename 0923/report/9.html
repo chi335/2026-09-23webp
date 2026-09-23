@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Most visited pages</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        /* 1. 제목 텍스트: text-shadow 속성으로 글자 그림자 효과 */
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* X축 Y축 흐림정도 색상 */
+            margin-bottom: 20px;
+        }
+
+        /* 이미지들을 가로로 나란히 배치하기 위한 컨테이너 */
+        .img-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* 기본 이미지 스타일 */
+        .visited-img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease; /* 애니메이션 효과 (부드럽게 전환) */
+            cursor: pointer;
+        }
+
+        /* 🔥 2. 마우스를 올렸을 때(:hover): box-shadow로 박스 그림자 출력 */
+        .visited-img:hover {
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4); /* 박스 그림자 생성 */
+            transform: translateY(-5px);                  /* 카드가 살짝 위로 올라가는 효과 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- text-shadow가 적용된 제목 -->
+    <h2 class="title">Most visited pages</h2>
+    <hr>
+
+    <!-- 이미지 목록 영역 -->
+    <div class="img-container">
+        <!-- 가지고 계신 이미지 파일명(예: site1.jpg 등)으로 src를 변경해서 사용하세요 -->
+        <img class="visited-img" src="site1.jpg" alt="방문한 페이지 1">
+        <img class="visited-img" src="site2.jpg" alt="방문한 페이지 2">
+        <img class="visited-img" src="site3.jpg" alt="방문한 페이지 3">
+    </div>
+
+</body>
+</html>

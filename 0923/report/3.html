@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>색이름과 코드</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            margin: 30px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* 표 스타일링 */
+        table {
+            width: 100%;
+            max-width: 700px;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            background-color: #343a40;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f3f5;
+        }
+
+        /* 색상 미리보기 박스 */
+        .color-box {
+            width: 80px;
+            height: 25px;
+            margin: 0 auto;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        /* 코드 폰트 스타일 */
+        .code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🎨 웹 주요 색상 이름 및 코드 표</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>색상 이름</th>
+                <th>HEX 코드</th>
+                <th>RGB 코드</th>
+                <th>색상 미리보기</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AliceBlue (앨리스블루)</td>
+                <td class="code">#F0F8FF</td>
+                <td class="code">rgb(240, 248, 255)</td>
+                <td><div class="color-box" style="background-color: AliceBlue;"></div></td>
+            </tr>
+            <tr>
+                <td>MistyRose (미스티로즈)</td>
+                <td class="code">#FFE4E1</td>
+                <td class="code">rgb(255, 228, 225)</td>
+                <td><div class="color-box" style="background-color: MistyRose;"></div></td>
+            </tr>
+            <tr>
+                <td>Brown (갈색)</td>
+                <td class="code">#A52A2A</td>
+                <td class="code">rgb(165, 42, 42)</td>
+                <td><div class="color-box" style="background-color: Brown;"></div></td>
+            </tr>
+            <tr>
+                <td>Blue (파란색)</td>
+                <td class="code">#0000FF</td>
+                <td class="code">rgb(0, 0, 255)</td>
+                <td><div class="color-box" style="background-color: Blue;"></div></td>
+            </tr>
+            <tr>
+                <td>Yellow (노란색)</td>
+                <td class="code">#FFFF00</td>
+                <td class="code">rgb(255, 255, 0)</td>
+                <td><div class="color-box" style="background-color: Yellow;"></div></td>
+            </tr>
+            <tr>
+                <td>CornflowerBlue (콘플라워블루)</td>
+                <td class="code">#6495ED</td>
+                <td class="code">rgb(100, 149, 237)</td>
+                <td><div class="color-box" style="background-color: CornflowerBlue;"></div></td>
+            </tr>
+            <tr>
+                <td>Gold (골드)</td>
+                <td class="code">#FFD700</td>
+                <td class="code">rgb(255, 215, 0)</td>
+                <td><div class="color-box" style="background-color: Gold;"></div></td>
+            </tr>
+            <tr>
+                <td>Tomato (토마토)</td>
+                <td class="code">#FF6347</td>
+                <td class="code">rgb(255, 99, 71)</td>
+                <td><div class="color-box" style="background-color: Tomato;"></div></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
